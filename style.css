@@ -1,4 +1,32 @@
 * {
-  background-image: url(/assets/mobile/background-mobile.svg);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-size: cover;
+  background-image: url(/assets/mobile/background-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+span {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border-radius: 25px;
+  background-color: rgba(88, 76, 244, 1);
+  align-items: center;
+  justify-content: center;
+}
+
+span img {
+  width: 100%;
+  max-width: 56px;
+  min-width: 56px;
 }
