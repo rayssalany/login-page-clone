@@ -3,74 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="icon" type="image/png" href="assets/Favicon-Roxo.avif">
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Entre na sua conta BuyTicket</title>
   </head>
+  
   <body>
+    <img src="/assets/mobile/background-mobile.svg" alt="background-mobile">
+  <section>
     <main>
-      <span class="logo-branca-transparente">
-      <img 
-        src="/assets/mobile/Logo-Branca-Transparente.avif"
-        alt="logo-branca-transparente"
-      />
-      </span>
-      <img
-        src="/assets/mobile/Tipografia-Roxo-Transparente.avif"
-        alt="tipografia-roxo-transparente"
-      />
-      
-    </main>
-    <section>
-      <h1>Fazer login</h1>
-      <form>
-        <input
-          type="email"
-          name="email"
-          id="user-email"
-          placeholder="Seu email"
-        />
-        <input
-          type="password"
-          name="senha"
-          id="user-password"
-          placeholder="Sua senha"
-        />
-        <input type="checkbox" name="lembrar" id="remember-user" />
-        <label for="remember-user">Lembrar de mim</label>
-        <a href="" rel="noopener noreferrer"
-          >Esqueceu a senha?</a
-        >
-        <button>Entrar na conta</button>
-        <ion-icon name="chevron-forward-outline"></ion-icon>
-      </form>
-    </section>
+    <span class="logo-branca-transparente">
+      <img src="/assets/mobile/Logo-Branca-Transparente.avif" alt="logo-branca-transparente" />
+    </span>
+    <img class="tipografia-roxo-transparente" src="/assets/mobile/Tipografia-Roxo-Transparente.avif"
+      alt="tipografia-roxo-transparente" />
+    
+
+  </main>
+
+    <h1>Fazer login</h1>
+
+    <form>
+      <i class="fa-duotone fa-solid fa-envelope"></i>
+      <input type="email" name="email" id="user-email" placeholder="Seu email" />
+      <input type="password" name="senha" id="user-password" placeholder="Sua senha" />
+    </form>
+
+    <div class="checkbox-area">
+
+    <div class="checkbox-left">
+    <input type="checkbox" name="lembrar" id="remember-user-btn" />
+
+    <label for="remember-user-btn" id="remember-user">
+      Lembrar de mim
+    </label>
+  </div>
+
+  <a href="" rel="noopener noreferrer" id="forget-password">
+    Esqueceu a senha?
+  </a>
+
+</div>
+
+    <button id="login-btn">Entrar na conta</button>
+    <ion-icon name="chevron-forward-outline"></ion-icon>
     <div class="creat-account-direct">
       <p>Ainda não tem uma conta?</p>
       <a href="" rel="noopener noreferrer">Cadastrar</a>
+    
 
-      <!-- CAMPO ESQUECEU A SENHA
-
-      <div class="forgot-password-field">
-        
-        <h1>Esqueci a senha</h1>
-        <p>Enviaremos um email para o email informado abaixo com um link para você trocar sua senha. Este link é válido apenas 1 vez.</p>
-        <input
-          type="email"
-          name="email"
-          id="user-email"
-          placeholder="Seu email"
+  <!--
+    <div class="forgot-password-field">
+      <span class="logo-branca-transparente2">
+        <img
+          src="/assets/mobile/Logo-Branca-Transparente.avif"
+          alt="logo-branca-transparente"
         />
-        <button id="cancel-btn">Cancelar</button>
-        <button id="confirm-btn">Confirmar</button>
-
+      </span>
+      <h1>Esqueci a senha</h1>
+      <p>
+        Enviaremos um email para o email informado abaixo com um link para você
+        trocar sua senha. Este link é válido apenas 1 vez.
+      </p>
+      <input
+        type="email"
+        name="email"
+        id="user-email"
+        placeholder="Seu email"
+      />
+      <button id="cancel-btn">Cancelar</button>
+      <button id="confirm-btn">Confirmar</button>
     </div>
-    -->
-
-       <!-- CAMPO CADASTRO
+   -->
+    <!--
     <div class="registrer-field">
       <input type="number" name="CPF" id="user-cpf" placeholder="Seu CPF">
       <input type="text" name="name" id="user-name">
@@ -79,6 +94,7 @@
       <p>Já tem uma conta?</p>
       <a href="" rel="noopener noreferrer">Entrar</a>
     </div>
+      </section>
     -->
   </body>
 </html>
