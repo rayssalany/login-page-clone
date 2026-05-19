@@ -10,60 +10,66 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="assets/Favicon-Roxo.avif">
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="icon" type="image/png" href="assets/Favicon-Roxo.avif" />
     <title>Entre na sua conta BuyTicket</title>
   </head>
-  
+
   <body>
-    <img src="/assets/mobile/background-mobile.svg" alt="background-mobile">
-  <section>
-    <main>
-    <span class="logo-branca-transparente">
-      <img src="/assets/mobile/Logo-Branca-Transparente.avif" alt="logo-branca-transparente" />
-    </span>
-    <img class="tipografia-roxo-transparente" src="/assets/mobile/Tipografia-Roxo-Transparente.avif"
-      alt="tipografia-roxo-transparente" />
-    
+    <img src="/assets/mobile/background-mobile.svg" alt="background-mobile" />
 
-  </main>
+    <section>
+      <main>
+        <span class="logo-branca-transparente">
+          <img
+            src="/assets/mobile/Logo-Branca-Transparente.avif"
+            alt="logo-branca-transparente"
+          />
+        </span>
+        <img
+          class="tipografia-roxo-transparente"
+          src="/assets/mobile/Tipografia-Roxo-Transparente.avif"
+          alt="tipografia-roxo-transparente"
+        />
+      </main>
 
-    <h1>Fazer login</h1>
+      <h1>Fazer login</h1>
 
-    <form>
-      <i class="fa-duotone fa-solid fa-envelope"></i>
-      <input type="email" name="email" id="user-email" placeholder="Seu email" />
-      <input type="password" name="senha" id="user-password" placeholder="Sua senha" />
-    </form>
+      <form>
+        <input
+          type="email"
+          name="email"
+          id="user-email"
+          placeholder="Seu email"
+        />
+        <input
+          type="password"
+          name="senha"
+          id="user-password"
+          placeholder="Sua senha"
+        />
+      </form>
 
-    <div class="checkbox-area">
+      <div class="checkbox-area">
+        <div class="checkbox-left">
+          <input type="checkbox" name="lembrar" id="remember-user-btn" />
+          <label for="remember-user-btn" id="remember-user"
+            >Lembrar de mim</label
+          >
+        </div>
+        <a href="" rel="noopener noreferrer" id="forget-password"
+          >Esqueceu a senha?</a
+        >
+      </div>
 
-    <div class="checkbox-left">
-    <input type="checkbox" name="lembrar" id="remember-user-btn" />
+      <button id="login-btn">Entrar na conta</button>
 
-    <label for="remember-user-btn" id="remember-user">
-      Lembrar de mim
-    </label>
-  </div>
+      <div class="creat-account-direct">
+        <p>Ainda não tem uma conta?</p>
+        <a href="" rel="noopener noreferrer" id="register-link">Cadastrar</a>
+      </div>
+    </section>
 
-  <a href="" rel="noopener noreferrer" id="forget-password">
-    Esqueceu a senha?
-  </a>
-
-</div>
-
-    <button id="login-btn">Entrar na conta</button>
-    <ion-icon name="chevron-forward-outline"></ion-icon>
-    <div class="creat-account-direct">
-      <p>Ainda não tem uma conta?</p>
-      <a href="" rel="noopener noreferrer">Cadastrar</a>
-    
-
-  <!--
-    <div class="forgot-password-field">
+    <div class="forgot-password-field hidden">
       <span class="logo-branca-transparente2">
         <img
           src="/assets/mobile/Logo-Branca-Transparente.avif"
@@ -75,26 +81,31 @@
         Enviaremos um email para o email informado abaixo com um link para você
         trocar sua senha. Este link é válido apenas 1 vez.
       </p>
-      <input
-        type="email"
-        name="email"
-        id="user-email"
-        placeholder="Seu email"
-      />
-      <button id="cancel-btn">Cancelar</button>
-      <button id="confirm-btn">Confirmar</button>
+      <label for="fgt-email">Seu email</label>
+      <input type="email" name="email" id="fgt-email" placeholder="Seu email" />
+      <div class="fgt-buttons">
+        <button id="cancel-btn">Cancelar</button>
+        <button id="confirm-btn">Confirmar</button>
+      </div>
     </div>
-   -->
-    <!--
-    <div class="registrer-field">
-      <input type="number" name="CPF" id="user-cpf" placeholder="Seu CPF">
-      <input type="text" name="name" id="user-name">
+
+    <div class="registrer-field hidden">
+      <h1>Criar conta</h1>
+      <input
+        type="text"
+        name="CPF"
+        id="user-cpf"
+        placeholder="Seu CPF"
+        maxlength="11"
+      />
+      <input type="text" name="name" id="user-name" placeholder="Seu nome" />
       <button id="continue-btn">Continuar</button>
       <div class="login-account-direct">
-      <p>Já tem uma conta?</p>
-      <a href="" rel="noopener noreferrer">Entrar</a>
+        <p>Já tem uma conta?</p>
+        <a href="" rel="noopener noreferrer">Entrar</a>
+      </div>
     </div>
-      </section>
-    -->
+
+    <script src="script.js"></script>
   </body>
 </html>

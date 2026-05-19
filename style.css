@@ -194,35 +194,168 @@ form input::placeholder {
   width: 24px;
 }
 
-.forgot-password-field h1 {
-  font-size: 1.6rem;
+.forgot-password-field {
+  display: none;
+}
 
-  color: #404040;
+.forgot-password-field h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(60, 60, 60, 1);
+  line-height: 1.4;
+  border-radius: 0px;
+  opacity: 1;
+  align-self: center;
+  min-width: 0px;
+  order: 4;
+  min-height: 0px;
+  width: max-content;
+  flex-grow: 0;
+  height: max-content;
 }
 
 .forgot-password-field::after {
-  content: "";
   position: absolute;
-  top: 5.5rem;
-  left: 1.5rem;
-  right: 1.5rem;
-  height: 1px;
   background: #e5e5e5;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 90%;
+  max-width: 390px;
 }
 
 .forgot-password-field p {
   width: 100%;
   margin-top: 1.7rem;
-  padding: 1rem;
+  padding: 16px;
   border: 2px dashed #5b4df5;
   border-radius: 18px;
   background: rgba(91, 77, 245, 0.03);
-  color: #4b4b4b;
-  font-size: 0.92rem;
+  color: rgba(60, 60, 60, 1);
+  font-weight: 600;
+  font-size: 14px;
   line-height: 1.45;
+  min-width: 0px;
+  order: 2;
+  min-height: 100px;
+  height: max-content;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: calc(100% - 0px);
+  margin-left: 0px;
+  margin-top: 16px;
+  margin-right: 0px;
+  margin-bottom: 24px;
+  z-index: 3;
 }
 
-#user-email {
+#fgt-email {
+  width: 100%;
+  height: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 14px;
+  background: #f1f1f1;
+  padding: 0 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+  min-width: 0px;
+  max-width: 360px;
+  order: 6;
+  min-height: 50px;
+  max-height: 50px;
+  height: 0px;
+  flex-grow: 1;
+  width: calc(100% - 0px);
+  margin-left: 0px;
+  margin-top: 12px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  z-index: 2;
+  transition:
+    border-width 200ms ease,
+    border-color 200ms ease;
+}
+
+#cancel-btn {
+  border: 2px solid #5b4df5;
+  background: white;
+  color: #5b4df5;
+  flex: 1;
+  height: 54px;
+  border-radius: 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+  cursor: pointer;
+  align-self: flex-start;
+  min-width: 150px;
+  max-width: 150px;
+  order: 1;
+  min-height: 50px;
+  width: 150px;
+  flex-grow: 1;
+  height: max-content;
+  padding: 12px 24px 12px 24px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  z-index: 5;
+  transition: background 200ms ease;
+}
+
+#confirm-btn {
+  border: none;
+  background: #5b4df5;
+  color: white;
+  flex: 1;
+  height: 54px;
+  border-radius: 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+  cursor: pointer;
+  align-self: flex-start;
+  min-width: 150px;
+  max-width: 150px;
+  order: 1;
+  min-height: 50px;
+  width: 150px;
+  flex-grow: 1;
+  height: max-content;
+  padding: 12px 24px 12px 24px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  z-index: 5;
+  transition: background 200ms ease;
+}
+
+#cancel-btn:hover,
+#confirm-btn:hover {
+  transform: scale(1.02);
+}
+
+.registrer-field {
+  display: none;
+  width: 100%;
+  max-width: 390px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.registrer-field input {
+  display: none;
   width: 100%;
   height: 56px;
   border: none;
@@ -231,34 +364,7 @@ form input::placeholder {
   padding: 0 1rem;
   outline: none;
   font-size: 1rem;
-}
-
-#cancel-btn,
-#confirm-btn {
-  flex: 1;
-  height: 54px;
-  border-radius: 18px;
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-#cancel-btn {
-  border: 2px solid #5b4df5;
-  background: white;
-  color: #5b4df5;
-}
-
-#confirm-btn {
-  border: none;
-  background: #5b4df5;
-  color: white;
-}
-
-#cancel-btn:hover,
-#confirm-btn:hover {
-  transform: scale(1.02);
+  color: #333;
 }
 
 @media (min-width: 1000px) {
@@ -294,7 +400,6 @@ form input::placeholder {
     z-index: 2;
     padding: 7rem 1.4rem 1.5rem;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.08);
     border-radius: 26px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 25px 5px inset;
   }
@@ -348,9 +453,6 @@ form input::placeholder {
   form input[type="email"],
   form input[type="password"] {
     height: 50px;
-  }
-
-  form input::placeholder {
   }
 
   #remember-user,
