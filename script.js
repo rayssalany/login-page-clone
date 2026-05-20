@@ -10,21 +10,20 @@ const fgtPasswordField = document.querySelector(".forgot-password-field")
 
 fgtPassword.addEventListener("click", (e) => {
   e.preventDefault();
-  fgtPasswordField.style.display = 'block';
   loginSection.style.display = 'none';
-  registerField.style.display = 'none';
+  fgtPasswordField.style.display = 'flex';
+  registerField.style.display = 'none'; 
 });
 
 cnclBtn.addEventListener("click", () => {
-
   fgtPasswordField.style.display = 'none';
-  loginSection.style.display = 'block';
+  loginSection.style.display = 'flex';
   registerField.style.display = 'none';
 });
 
-registerField.addEventListener("click", () => {
+registerBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  fgtPasswordField.style.display = 'none';
   loginSection.style.display = 'none';
-  registerField.style.display = 'block';
+  fgtPasswordField.style.display = 'none';
+  registerField.style.display = 'flex';
 });

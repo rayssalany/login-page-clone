@@ -15,8 +15,6 @@
   </head>
 
   <body>
-    <img src="/assets/mobile/background-mobile.svg" alt="background-mobile" />
-
     <section>
       <main>
         <span class="logo-branca-transparente">
@@ -29,6 +27,11 @@
           class="tipografia-roxo-transparente"
           src="/assets/mobile/Tipografia-Roxo-Transparente.avif"
           alt="tipografia-roxo-transparente"
+        />
+        <img
+          class="tipografia-roxo-transparente2"
+          src="/assets/web/Tipografia-Roxo-Transparente (1) 1 2 (1) (1).avif"
+          alt=""
         />
       </main>
 
@@ -69,7 +72,7 @@
       </div>
     </section>
 
-    <div class="forgot-password-field hidden">
+    <div class="forgot-password-field">
       <span class="logo-branca-transparente2">
         <img
           src="/assets/mobile/Logo-Branca-Transparente.avif"
@@ -89,20 +92,42 @@
       </div>
     </div>
 
-    <div class="registrer-field hidden">
-      <h1>Criar conta</h1>
-      <input
-        type="text"
-        name="CPF"
-        id="user-cpf"
-        placeholder="Seu CPF"
-        maxlength="11"
-      />
-      <input type="text" name="name" id="user-name" placeholder="Seu nome" />
+    <div class="registrer-field">
+      <main>
+        <span class="logo-branca-transparente">
+          <img src="/assets/mobile/Logo-Branca-Transparente.avif" alt="logo" />
+        </span>
+        <img
+          class="tipografia-roxo-transparente"
+          src="/assets/mobile/Tipografia-Roxo-Transparente.avif"
+          alt="tipografia"
+        />
+        <img
+          class="tipografia-roxo-transparente2"
+          src="/assets/web/Tipografia-Roxo-Transparente (1) 1 2 (1) (1).avif"
+          alt=""
+        />
+      </main>
+
+      <h1>Fazer cadastro</h1>
+
+      <form>
+        <input
+          type="text"
+          id="user-cpf"
+          placeholder="Digite seu CPF (apenas números)"
+          maxlength="11"
+        />
+        <input
+          type="text"
+          id="user-name"
+          placeholder="Digite seu nome completo"
+        />
+      </form>
       <button id="continue-btn">Continuar</button>
       <div class="login-account-direct">
         <p>Já tem uma conta?</p>
-        <a href="" rel="noopener noreferrer">Entrar</a>
+        <a href="" rel="noopener noreferrer" id="login-link">Entrar</a>
       </div>
     </div>
 
