@@ -1,136 +1,264 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="assets/Favicon-Roxo.avif"/>
+
+  <title>Entre na sua conta BuyTicket</title>
+</head>
+
+<body>
+
+<section>
+
+  <main>
+
+    <span class="logo-branca-transparente">
+      <img
+        src="/assets/mobile/Logo-Branca-Transparente.avif"
+        alt="logo-branca-transparente"
+      />
+    </span>
+
+    <img
+      class="tipografia-roxo-transparente"
+      src="/assets/mobile/Tipografia-Roxo-Transparente.avif"
+      alt="tipografia-roxo-transparente"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="assets/Favicon-Roxo.avif" />
-    <title>Entre na sua conta BuyTicket</title>
-  </head>
 
-  <body>
-    <section>
-      <main>
-        <span class="logo-branca-transparente">
-          <img
-            src="/assets/mobile/Logo-Branca-Transparente.avif"
-            alt="logo-branca-transparente"
-          />
-        </span>
-        <img
-          class="tipografia-roxo-transparente"
-          src="/assets/mobile/Tipografia-Roxo-Transparente.avif"
-          alt="tipografia-roxo-transparente"
-        />
-        <img
-          class="tipografia-roxo-transparente2"
-          src="/assets/web/Tipografia-Roxo-Transparente (1) 1 2 (1) (1).avif"
-          alt=""
-        />
-      </main>
+    <img
+      class="tipografia-roxo-transparente2"
+      src="/assets/web/Tipografia-Roxo-Transparente (1) 1 2 (1) (1).avif"
+      alt=""
+    />
 
-      <h1>Fazer login</h1>
+  </main>
 
-      <form>
+  <h1>Fazer login</h1>
+
+  <form id="login-form">
+
+    <label for="user-email">
+      E-mail
+      <span class="obrigatorio">*</span>
+    </label>
+
+    <input
+      type="email"
+      name="email"
+      id="user-email"
+      placeholder="Seu email"
+      required
+    />
+
+    <label for="user-password">
+      Senha
+      <span class="obrigatorio">*</span>
+    </label>
+
+    <input
+      type="password"
+      name="senha"
+      id="user-password"
+      placeholder="Sua senha"
+      required
+    />
+
+    <div class="checkbox-area">
+
+      <div class="checkbox-left">
+
         <input
-          type="email"
-          name="email"
-          id="user-email"
-          placeholder="Seu email"
+          type="checkbox"
+          name="lembrar"
+          id="remember-user-btn"
         />
-        <input
-          type="password"
-          name="senha"
-          id="user-password"
-          placeholder="Sua senha"
-        />
-      </form>
 
-      <div class="checkbox-area">
-        <div class="checkbox-left">
-          <input type="checkbox" name="lembrar" id="remember-user-btn" />
-          <label for="remember-user-btn" id="remember-user"
-            >Lembrar de mim</label
-          >
-        </div>
-        <a href="" rel="noopener noreferrer" id="forget-password"
-          >Esqueceu a senha?</a
+        <label
+          for="remember-user-btn"
+          id="remember-user"
         >
+          Lembrar de mim
+        </label>
+
       </div>
 
-      <button id="login-btn">Entrar na conta</button>
+      <a
+        href=""
+        rel="noopener noreferrer"
+        id="forget-password"
+      >
+        Esqueceu a senha?
+      </a>
 
-      <div class="creat-account-direct">
-        <p>Ainda não tem uma conta?</p>
-        <a href="" rel="noopener noreferrer" id="register-link">Cadastrar</a>
-      </div>
-    </section>
-
-    <div class="forgot-password-field">
-      <span class="logo-branca-transparente2">
-        <img
-          src="/assets/mobile/Logo-Branca-Transparente.avif"
-          alt="logo-branca-transparente"
-        />
-      </span>
-      <h1>Esqueci a senha</h1>
-      <p>
-        Enviaremos um email para o email informado abaixo com um link para você
-        trocar sua senha. Este link é válido apenas 1 vez.
-      </p>
-      <label for="fgt-email">Seu email</label>
-      <input type="email" name="email" id="fgt-email" placeholder="Seu email" />
-      <div class="fgt-buttons">
-        <button id="cancel-btn">Cancelar</button>
-        <button id="confirm-btn">Confirmar</button>
-      </div>
     </div>
 
-    <div class="registrer-field">
-      <main>
-        <span class="logo-branca-transparente">
-          <img src="/assets/mobile/Logo-Branca-Transparente.avif" alt="logo" />
-        </span>
-        <img
-          class="tipografia-roxo-transparente"
-          src="/assets/mobile/Tipografia-Roxo-Transparente.avif"
-          alt="tipografia"
-        />
-        <img
-          class="tipografia-roxo-transparente2"
-          src="/assets/web/Tipografia-Roxo-Transparente (1) 1 2 (1) (1).avif"
-          alt=""
-        />
-      </main>
+    <button
+      type="submit"
+      id="login-btn"
+    >
+      Entrar na conta
+    </button>
 
-      <h1>Fazer cadastro</h1>
+  </form>
 
-      <form>
-        <input
-          type="text"
-          id="user-cpf"
-          placeholder="Digite seu CPF (apenas números)"
-          maxlength="11"
-        />
-        <input
-          type="text"
-          id="user-name"
-          placeholder="Digite seu nome completo"
-        />
-      </form>
-      <button id="continue-btn">Continuar</button>
-      <div class="login-account-direct">
-        <p>Já tem uma conta?</p>
-        <a href="" rel="noopener noreferrer" id="login-link">Entrar</a>
-      </div>
-    </div>
+  <div class="creat-account-direct">
 
-    <script src="script.js"></script>
-  </body>
+    <p>Ainda não tem uma conta?</p>
+
+    <a
+      href=""
+      rel="noopener noreferrer"
+      id="register-link"
+    >
+      Cadastrar
+    </a>
+
+  </div>
+
+</section>
+
+
+<div class="forgot-password-field">
+
+  <span class="logo-branca-transparente2">
+
+    <img
+      src="/assets/mobile/Logo-Branca-Transparente.avif"
+      alt="logo-branca-transparente"
+    />
+
+  </span>
+
+  <h1>Esqueci a senha</h1>
+
+  <p>
+    Enviaremos um email para o email informado abaixo
+    com um link para você trocar sua senha.
+    Este link é válido apenas 1 vez.
+  </p>
+
+  <label for="fgt-email">
+    Seu email
+    <span class="obrigatorio">*</span>
+  </label>
+
+  <input
+    type="email"
+    name="email"
+    id="fgt-email"
+    placeholder="Seu email"
+    required
+  />
+
+  <div class="fgt-buttons">
+
+    <button id="cancel-btn">
+      Cancelar
+    </button>
+
+    <button id="confirm-btn">
+      Confirmar
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="registrer-field">
+
+  <main>
+
+    <span class="logo-branca-transparente">
+
+      <img
+        src="/assets/mobile/Logo-Branca-Transparente.avif"
+        alt="logo"
+      />
+
+    </span>
+
+    <img
+      class="tipografia-roxo-transparente"
+      src="/assets/mobile/Tipografia-Roxo-Transparente.avif"
+      alt="tipografia"
+    />
+
+    <img
+      class="tipografia-roxo-transparente2"
+      src="/assets/web/Tipografia-Roxo-Transparente (1) 1 2 (1) (1).avif"
+      alt=""
+    />
+
+  </main>
+
+  <h1>Fazer cadastro</h1>
+
+  <form>
+
+    <label for="user-cpf">
+      CPF
+      <span class="obrigatorio">*</span>
+    </label>
+
+    <input
+      type="text"
+      id="user-cpf"
+      placeholder="Digite seu CPF (apenas números)"
+      maxlength="11"
+      required
+    />
+
+    <label for="user-name">
+      Nome completo
+      <span class="obrigatorio">*</span>
+    </label>
+
+    <input
+      type="text"
+      id="user-name"
+      placeholder="Digite seu nome completo"
+      required
+    />
+
+    <button
+      type="submit"
+      id="continue-btn"
+    >
+      Continuar
+    </button>
+
+  </form>
+
+  <div class="login-account-direct">
+
+    <p>Já tem uma conta?</p>
+
+    <a
+      href=""
+      rel="noopener noreferrer"
+      id="login-link"
+    >
+      Entrar
+    </a>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
