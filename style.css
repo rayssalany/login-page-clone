@@ -453,13 +453,4 @@ form input:hover {
     background: linear-gradient(90deg, #5b4df5 0%, #6b57ff 100%);
     box-shadow: 0 10px 25px rgba(91, 77, 245, 0.4);
   }
-
-  .obrigatorio{
-    color:red;
-    display:none;
-}
-
-.erro .obrigatorio{
-    display:inline;
-}
 }

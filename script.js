@@ -27,29 +27,3 @@ registerBtn.addEventListener("click", (e) => {
   fgtPasswordField.style.display = 'none';
   registerField.style.display = 'flex';
 });
-
-const formulario = document.querySelector("#login-form");
-
-formulario.addEventListener("submit", function(event){
-
-    let campos = formulario.querySelectorAll("input[required]");
-    let possuiErro = false;
-
-    campos.forEach(campo=>{
-
-        let label = campo.previousElementSibling;
-
-        if(campo.value.trim()===""){
-            label.classList.add("erro");
-            possuiErro = true;
-        }else{
-            label.classList.remove("erro");
-        }
-
-    });
-
-    if(possuiErro){
-        event.preventDefault();
-    }
-
-});
